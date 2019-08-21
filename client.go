@@ -173,7 +173,7 @@ func getUserAuth(ctx context.Context, config Config, endpoint *Endpoint) (Config
 		if err != nil {
 			return config, errors.Wrap(err, "Error creating login_hint")
 		}
-		var val url.Values
+		val := url.Values{}
 		val.Set("login_hint", string(origin))
 		authConfig.Endpoint.TokenURL = fmt.Sprintf("%s?%s", authConfig.Endpoint.TokenURL, val.Encode())
 	}
