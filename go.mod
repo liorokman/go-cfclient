@@ -1,4 +1,4 @@
-module github.com/cloudfoundry-community/go-cfclient
+module github.com/liorokman/go-cfclient
 
 require (
 	code.cloudfoundry.org/gofileutils v0.0.0-20170111115228-4d0c80011a0f
